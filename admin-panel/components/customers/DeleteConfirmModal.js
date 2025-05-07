@@ -1,5 +1,7 @@
+"use client";
+
 import { useState } from 'react';
-import styles from '@/components/modal/Modal.module.css';
+import styles from './CustomerModal.module.css';
 
 export default function DeleteConfirmModal({ itemName, itemType = 'customer', onClose, onDelete }) {
   const [isDeleting, setIsDeleting] = useState(false);

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import styles from './CustomerModal.module.css';
+import styles from '../../components/customers/CustomerModal.module.css';
 
 export default function AddCustomerModal({ onClose, onSave }) {
   const [customer, setCustomer] = useState({

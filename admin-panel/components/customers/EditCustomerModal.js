@@ -1,6 +1,7 @@
+"use client";
+
 import { useState, useEffect } from 'react';
-import styles from '@/components/modal/Modal.module.css';
-import customerStyles from './CustomerModal.module.css';
+import styles from './CustomerModal.module.css';
 
 export default function EditCustomerModal({ customer, onClose, onSave }) {
   const [formData, setFormData] = useState({
@@ -161,30 +162,30 @@ export default function EditCustomerModal({ customer, onClose, onSave }) {
               <label htmlFor="type" className={styles.formLabel}>
                 Customer Type <span className={styles.requiredMark}>*</span>
               </label>
-              <div className={customerStyles.typeSelector}>
-                <label className={`${customerStyles.typeOption} ${formData.type === 'DEALER' ? customerStyles.selected : ''}`}>
+              <div className={styles.typeSelector}>
+                <label className={`${styles.typeOption} ${formData.type === 'DEALER' ? styles.selected : ''}`}>
                   <input
                     type="radio"
                     name="type"
                     value="DEALER"
                     checked={formData.type === 'DEALER'}
                     onChange={handleChange}
-                    className={customerStyles.typeInput}
+                    className={styles.typeInput}
                     disabled={isSubmitting}
                   />
-                  <span className={customerStyles.typeLabel}>Dealer</span>
+                  <span className={styles.typeLabel}>Dealer</span>
                 </label>
-                <label className={`${customerStyles.typeOption} ${formData.type === 'END_USER' ? customerStyles.selected : ''}`}>
+                <label className={`${styles.typeOption} ${formData.type === 'END_USER' ? styles.selected : ''}`}>
                   <input
                     type="radio"
                     name="type"
                     value="END_USER"
                     checked={formData.type === 'END_USER'}
                     onChange={handleChange}
-                    className={customerStyles.typeInput}
+                    className={styles.typeInput}
                     disabled={isSubmitting}
                   />
-                  <span className={customerStyles.typeLabel}>End User</span>
+                  <span className={styles.typeLabel}>End User</span>
                 </label>
               </div>
             </div>
