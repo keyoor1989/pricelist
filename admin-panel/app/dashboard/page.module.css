@@ -1,0 +1,147 @@
+.dashboardContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pageHeader {
+  margin-bottom: 1.5rem;
+}
+
+.pageTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #343a40;
+}
+
+.welcomeMessage {
+  font-size: 1.25rem;
+  color: #495057;
+  margin-bottom: 0.25rem;
+}
+
+.userName {
+  font-weight: 600;
+  color: #0d6efd;
+}
+
+.dateTime {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.statCard {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: transform 0.2s;
+}
+
+.statCard:hover {
+  transform: translateY(-4px);
+}
+
+.statIcon {
+  font-size: 2rem;
+  margin-right: 1.25rem;
+  background-color: #f8f9fa;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.statInfo {
+  flex: 1;
+}
+
+.statValue {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: #212529;
+}
+
+.statTitle {
+  font-size: 0.875rem;
+  color: #6c757d;
+  margin: 0;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #343a40;
+}
+
+.recentActivity,
+.quickActions {
+  margin-bottom: 2rem;
+}
+
+.activityCard {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.activityPlaceholder {
+  text-align: center;
+  padding: 2rem 0;
+  color: #6c757d;
+}
+
+.placeholderNote {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  color: #adb5bd;
+}
+
+.actionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.actionButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem;
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.actionButton:hover {
+  background-color: #f8f9fa;
+  transform: translateY(-2px);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+.actionIcon {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.actionText {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #495057;
+} 

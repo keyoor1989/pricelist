@@ -1,0 +1,114 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  background-color: #fff;
+  border-right: 1px solid #e9ecef;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.sidebarHeader {
+  padding: 1.5rem 1rem;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.sidebarTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #343a40;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+
+.userRole {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6c757d;
+  text-transform: uppercase;
+}
+
+.userEmail {
+  font-size: 0.875rem;
+  color: #495057;
+}
+
+.sidebarNav {
+  flex-grow: 1;
+  padding: 1rem 0;
+  overflow-y: auto;
+}
+
+.navList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navItem {
+  margin-bottom: 0.25rem;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  color: #495057;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+}
+
+.navLink:hover {
+  background-color: #f8f9fa;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #e9ecef;
+  color: #0d6efd;
+  font-weight: 500;
+}
+
+.navIcon {
+  margin-right: 0.75rem;
+  font-size: 1.25rem;
+  width: 1.5rem;
+  text-align: center;
+}
+
+.sidebarFooter {
+  padding: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.logoutButton {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.6rem 1rem;
+  background-color: #f8f9fa;
+  color: #495057;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.logoutButton:hover {
+  background-color: #e9ecef;
+}
+
+.logoutIcon {
+  margin-right: 0.75rem;
+  font-size: 1.25rem;
+} 

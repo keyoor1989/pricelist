@@ -1,0 +1,211 @@
+.productsContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.pageTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #343a40;
+  margin: 0;
+}
+
+.actionButtons {
+  display: flex;
+  align-items: center;
+}
+
+.addButton {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.addButton:hover {
+  background-color: #0056b3;
+}
+
+.addIcon {
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+}
+
+.tableContainer {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  overflow-x: auto;
+}
+
+.productsTable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1000px;
+}
+
+.productsTable th,
+.productsTable td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #e9ecef;
+  font-size: 0.875rem;
+}
+
+.productsTable th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #495057;
+  position: sticky;
+  top: 0;
+}
+
+.productsTable tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.photoCell {
+  width: 60px;
+  padding: 0.5rem;
+}
+
+.productThumbnail {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.actionsCell {
+  width: 120px;
+  text-align: right !important;
+  white-space: nowrap;
+}
+
+.editButton,
+.deleteButton {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid transparent;
+  margin-left: 0.5rem;
+  transition: all 0.2s;
+}
+
+.editButton {
+  background-color: #e9ecef;
+  color: #495057;
+}
+
+.editButton:hover {
+  background-color: #dee2e6;
+}
+
+.deleteButton {
+  background-color: #f8d7da;
+  color: #842029;
+}
+
+.deleteButton:hover {
+  background-color: #f5c2c7;
+}
+
+.noData {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  text-align: center;
+  color: #6c757d;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .pageHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .actionButtons {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+/* Loading and Error Styles */
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  height: 200px;
+  text-align: center;
+}
+
+.loadingSpinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.errorContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid #e74c3c;
+  border-radius: 5px;
+  background-color: #fef2f0;
+  margin: 1rem 0;
+}
+
+.errorMessage {
+  color: #e74c3c;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.retryButton {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.retryButton:hover {
+  background-color: #2980b9;
+} 

@@ -1,0 +1,339 @@
+.productModalContent {
+  max-width: 800px;
+  width: 90%;
+}
+
+.productModalBody {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .formGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fullWidth {
+  grid-column: 1 / -1;
+}
+
+.helperText {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+
+.formPreview {
+  border: 1px solid #e9ecef;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: #f8f9fa;
+}
+
+.previewTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.previewImage {
+  max-width: 200px;
+  max-height: 200px;
+  object-fit: contain;
+  margin-top: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #e9ecef;
+}
+
+/* Bulk Upload Styles */
+.uploadSection {
+  width: 100%;
+  padding: 1rem;
+}
+
+.fileInputContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.fileInput {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+
+.fileInputLabel {
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem 0 0 0.25rem;
+  padding: 0.5rem 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  flex: 1;
+  cursor: pointer;
+  color: #495057;
+  font-size: 0.875rem;
+}
+
+.browseButton {
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+  border-left: none;
+  border-radius: 0 0.25rem 0.25rem 0;
+  padding: 0.5rem 1rem;
+  color: #495057;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.2s;
+}
+
+.browseButton:hover {
+  background-color: #dee2e6;
+}
+
+.csvHelp {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.csvHelpText {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.875rem;
+  color: #495057;
+}
+
+.sampleButton {
+  background-color: transparent;
+  color: #0070f3;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 0.875rem;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.sampleButton:hover {
+  color: #0056b3;
+}
+
+.errorContainer {
+  background-color: #f8d7da;
+  border: 1px solid #f5c2c7;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #842029;
+}
+
+.errorTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.errorList {
+  margin: 0;
+  padding-left: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.errorItem {
+  margin-bottom: 0.25rem;
+}
+
+.duplicateOptions {
+  background-color: #fff3cd;
+  border: 1px solid #ffecb5;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #664d03;
+}
+
+.duplicateTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.radioGroup {
+  display: flex;
+  gap: 1rem;
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.uploadSummary {
+  background-color: #d1e7dd;
+  border: 1px solid #badbcc;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #0f5132;
+}
+
+.summaryText {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+/* Bulk Upload Button in Products Page */
+.bulkUploadButton {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-right: 0.5rem;
+}
+
+.bulkUploadButton:hover {
+  background-color: #5a6268;
+}
+
+.uploadIcon {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Delete modal styles */
+.deleteModalContent {
+  max-width: 500px;
+}
+
+.deleteConfirmText {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.productDetailBox {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.productDetailBox p {
+  margin: 0.5rem 0;
+}
+
+.warningText {
+  color: #dc3545;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+/* Bulk upload modal styles */
+.bulkUploadModalContent {
+  max-width: 650px;
+}
+
+/* Progress bar styles */
+.progressContainer {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 0.25rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.progressTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: #343a40;
+  text-align: center;
+}
+
+.progressBarContainer {
+  height: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.progressBar {
+  height: 100%;
+  background-color: #0070f3;
+  border-radius: 1rem;
+  transition: width 0.3s ease;
+}
+
+.progressStats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.progressStat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.progressLabel {
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+
+.progressValue {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #343a40;
+}
+
+.progressSuccess {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #28a745;
+}
+
+.progressFailed {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #dc3545;
+}
+
+.uploadComplete {
+  background-color: #d1e7dd;
+  border-color: #badbcc;
+}
+
+.successMessage {
+  margin: 0.5rem 0 0 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0f5132;
+  text-align: center;
+} 

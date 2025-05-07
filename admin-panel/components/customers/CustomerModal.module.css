@@ -1,0 +1,48 @@
+.typeSelector {
+  display: flex;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.typeOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex: 1;
+  text-align: center;
+}
+
+.typeOption:hover {
+  border-color: #0070f3;
+  background-color: #f5f8ff;
+}
+
+.typeOption.selected {
+  border-color: #0070f3;
+  background-color: #f0f7ff;
+  box-shadow: 0 0 0 1px #0070f3;
+}
+
+.typeInput {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.typeLabel {
+  font-weight: 500;
+  color: #444;
+  margin-top: 6px;
+}
+
+.selected .typeLabel {
+  color: #0070f3;
+} 
