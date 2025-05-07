@@ -1,0 +1,15 @@
+{
+  "name": "pricelist-db-deployment",
+  "version": "1.0.0",
+  "description": "Database migration files for PriceList application",
+  "main": "deploy-db.js",
+  "scripts": {
+    "deploy": "node deploy-db.js",
+    "deploy:seed": "node deploy-db.js --seed"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.0.0",
+    "prisma": "^5.0.0",
+    "bcryptjs": "^3.0.2"
+  }
+} 
